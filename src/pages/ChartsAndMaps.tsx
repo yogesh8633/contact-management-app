@@ -36,7 +36,7 @@ const ChartsAndMaps: React.FC = () => {
 
   // Set up the chart using useLayoutEffect
   useLayoutEffect(() => {
-    if (historicalData) {
+    if (historicalData && document.getElementById('chartdiv')) {
       const chart = am4core.create('chartdiv', am4charts.XYChart);
 
       const dateAxis = chart.xAxes.push(new am4charts.DateAxis());
