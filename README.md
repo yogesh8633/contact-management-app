@@ -49,7 +49,7 @@ This is a Contact Management Dashboard built with React, TypeScript, Redux, and 
 1. **Clone the repository**:
    ```bash
    git clone https://github.com/yogesh8633/contact-management-app.git
-   cd contact-management-dashboard
+   cd contact-management-app
 2. **Install dependencies:**:
     ```bash
    npm install
