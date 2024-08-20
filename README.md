@@ -1,46 +1,107 @@
-# Getting Started with Create React App
+# Contact Management Dashboard
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This is a Contact Management Dashboard built with React, TypeScript, Redux, and Ant Design. It also includes data visualization using amCharts and Leaflet maps, with data fetched using React Query from public COVID-19 APIs.
 
-## Available Scripts
+## Features
 
-In the project directory, you can run:
+- **Contact Management**: Add, edit, and delete contacts.
+- **COVID-19 Dashboard**: Visualize global COVID-19 data with charts and maps.
+- **Responsive Design**: The application is fully responsive and works on all device sizes.
 
-### `npm start`
+## Folder Structure
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+```plaintext
+├── public
+├── src
+│   ├── components
+│   │   ├── contacts
+│   │   │   ├── CreateContactModal.tsx
+│   │   │   └── EditContact.tsx
+│   │   └── sidebar
+│   │       └── Sidebar.tsx
+│   ├── features
+│   │   └── contacts
+│   │       └── contactSlice.ts
+│   ├── hooks
+│   │   ├── useCountriesData.ts
+│   │   ├── useGlobalData.ts
+│   │   └── useHistoricalData.ts
+│   ├── pages
+│   │   ├── ChartsAndMaps.tsx
+│   │   └── Contacts.tsx
+│   ├── store
+│   │   └── store.ts
+│   ├── utils
+│   │   ├── amcharts.d.ts
+│   │   └── api.ts
+│   ├── App.css
+│   ├── App.tsx
+│   ├── index.css
+│   ├── index.tsx
+│   ├── logo.svg
+│   ├── react-app-env.d.ts
+│   └── reportWebVitals.ts
+└── package.json
+```
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Installation
 
-### `npm test`
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/yogesh8633/contact-management-app.git
+   cd contact-management-dashboard
+2. **Install dependencies:**:
+    ```bash
+   npm install
+3. **Start the development server:**
+    ```bash
+    npm start
+4.  **Build for production:**
+    ```bash
+    npm run build
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
 
-### `npm run build`
+### Usage
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Creating a Contact**: Use the "Create Contact" button to add a new contact. Fill in the required details and save.
+- **Editing a Contact**: Navigate to a contact's detail page and click "Edit" to modify the contact's information.
+- **Viewing Global COVID-19 Data**: The dashboard provides an overview of global COVID-19 statistics with charts and maps.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+## Deployment
+**Deployed Link**: [Deployed Link](#https://contact-management-app-kappa-silk.vercel.app)
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+## Technologies Used
 
-### `npm run eject`
+- **React**: For building the user interface.
+- **TypeScript**: For static typing.
+- **Redux**: For state management.
+- **Ant Design**: For UI components.
+- **amCharts**: For data visualization.
+- **React Query**: For data fetching and state synchronization.
+- **Leaflet**: For interactive maps.
+- **Tailwind CSS**: For utility-first CSS styling.
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+## API References
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+- **Global COVID-19 Data**: [disease.sh API - Global Data](https://disease.sh/v3/covid-19/all)
+- **Country-Specific COVID-19 Data**: [disease.sh API - Country Data](https://disease.sh/v3/covid-19/countries)
+- **Historical COVID-19 Data**: [disease.sh API - Historical Data](https://disease.sh/v3/covid-19/historical/all?lastdays=all)
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+## Instructions
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+1. **Clone and Set Up**:
+   - Clone the repository and install dependencies as described in the [Installation](#installation) section.
 
-## Learn More
+2. **Run the Application**:
+   - Use `npm start` to run the application locally and see the dashboard in action.
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+3. **View Contacts**:
+   - Access the "Contacts" page to view, add, edit, or delete contacts.
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+4. **View COVID-19 Dashboard**:
+   - Navigate to the "Charts and Maps" page to view the global COVID-19 statistics, charts, and maps.
+
+5. **Deploying**:
+   - Build the project using `npm run build` and deploy it to your preferred platform, such as Vercel.
+
+
